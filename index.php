@@ -15,6 +15,7 @@ if (isset($_SESSION['user_id'])) {
     exit;
 }
 
+
 /* Handle language switch on login page */
 if (isset($_GET['setlang'])) {
     $allowed = array('en','ps','fa');
