@@ -5,7 +5,7 @@ $pageTitle = 'App Users';
 require_once __DIR__ . '/../../backend/includes/app_user.php';
 require_once __DIR__ . '/../../backend/includes/employee.php';
 require_once __DIR__ . '/../../backend/includes/rbac.php';
-
+// Access for user 
 requireAccess('app_users');
 $canWrite = canWrite('app_users');
 
