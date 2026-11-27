@@ -6,6 +6,7 @@ if (!isset($_SESSION['user_id'])) {
     header('Location: '.BASE_URL.'index.php'); exit;
 }
 
+
 $role = trim($_SESSION['role'] ?? 'Staff');
 if (!in_array($role, array('Manager','Admin'))) {
     die('Access denied — Manager or Admin role required.');
