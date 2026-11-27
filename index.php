@@ -97,7 +97,8 @@ $dir = $rtl ? 'rtl' : 'ltr';
     if ($loginLogo && file_exists($_SERVER['DOCUMENT_ROOT'].$loginLogo)):
     ?>
     <img src="<?= h($loginLogo) ?>?v=<?= time() ?>" alt="Logo"
-         style="width:80px;height:80px;border-radius:20px;object-fit:cover;margin:0 auto 12px;display:block;
+        
+ style="width:80px;height:80px;border-radius:20px;object-fit:cover;margin:0 auto 12px;display:block;
                 border:3px solid rgba(var(--primary-rgb),.2);">
     <?php else: ?>
     <div class="login-brand-icon">
